@@ -11,7 +11,7 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/commercetools/telefonistka:alpine-v1.20.0'
-  entrypoint: /telefonistka/bin/telefonistka
+  entrypoint: /usr/local/bin/telefonistka
   args:
     - event
     # - ${{ inputs.who-to-greet }}
